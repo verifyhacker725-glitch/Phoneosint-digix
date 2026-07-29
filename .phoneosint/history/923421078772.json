@@ -1,0 +1,451 @@
+[
+  {
+    "scanned_at": "2026-07-29T18:15:14+00:00",
+    "report": {
+      "target": "+923421078772",
+      "basic_info": {
+        "e164": "+923421078772",
+        "national": "0342 1078772",
+        "international": "+92 342 1078772",
+        "country_code": 92,
+        "national_number": 3421078772,
+        "region": "Pakistan",
+        "timezone": [
+          "Asia/Karachi"
+        ],
+        "carrier": "Telenor",
+        "line_type": "MOBILE",
+        "possible": true,
+        "valid": true
+      },
+      "external_osint_tools": {
+        "Maigret": {
+          "description": "Username/email/phone account discovery across social networks",
+          "command": "maigret 923421078772 --phone",
+          "note": "Requires maigret installed; primarily username-based."
+        },
+        "Sherlock": {
+          "description": "Username-based social account discovery",
+          "command": "sherlock 923421078772",
+          "note": "Use a username derived from the number, not the number itself."
+        },
+        "Holehe": {
+          "description": "Check if email/phone is registered on services",
+          "command": "holehe 923421078772",
+          "note": "Requires email format; phone support is limited."
+        },
+        "Twint": {
+          "description": "Twitter intelligence (search mentions of number)",
+          "command": "twint -s '+923421078772' -o twint_923421078772.csv --csv",
+          "note": "Deprecated/fragile; searches tweets containing the number."
+        },
+        "GHunt": {
+          "description": "Google account OSINT",
+          "command": "ghunt email 923421078772@gmail.com",
+          "note": "Requires an email, not a phone number."
+        },
+        "Mr.Holmes": {
+          "description": "All-in-one OSINT with phone modules",
+          "command": "python3 MrHolmes.py",
+          "note": "Mr.Holmes is a fully interactive menu-driven tool (no CLI flags) -- run it, then choose 'Phone Number OSINT' from the menu and paste the number in when prompted. Cannot be auto-scripted safely."
+        },
+        "PhoneInfoga": {
+          "description": "Advanced phone number OSINT scanner",
+          "command": "phoneinfoga scan -n +923421078772",
+          "note": "Install phoneinfoga separately."
+        },
+        "SpiderFoot": {
+          "description": "Full OSINT automation with phone number modules",
+          "command": "python3 sf.py -s +923421078772 -t PHONE_NUMBER -m sfp_phonenumber -o json",
+          "note": "Auto-run by PhoneOsint if cloned to ~/.phoneosint-tools/SpiderFoot (see install.sh); no persistent server or API key needed for this single-module scan."
+        },
+        "theHarvester": {
+          "description": "Email/domain enumeration",
+          "command": "theHarvester -d example.com -b all",
+          "note": "Not phone-specific; use with a domain linked to the target."
+        }
+      },
+      "disclaimer": "This tool only gathers publicly accessible metadata. Names, exact addresses, and private accounts require paid/authorized data or breach sources. City/region accuracy depends on carrier and public data availability.",
+      "dorks": {
+        "General": "https://www.google.com/search?q=%2B923421078772",
+        "WhatsApp": "https://www.google.com/search?q=%2B923421078772+%22WhatsApp%22",
+        "Telegram": "https://www.google.com/search?q=%2B923421078772+%22Telegram%22",
+        "Facebook": "https://www.google.com/search?q=%2B923421078772+%22Facebook%22",
+        "Instagram": "https://www.google.com/search?q=%2B923421078772+%22Instagram%22",
+        "Twitter/X": "https://www.google.com/search?q=%2B923421078772+%22Twitter%22",
+        "LinkedIn": "https://www.google.com/search?q=%2B923421078772+%22LinkedIn%22",
+        "Truecaller": "https://www.google.com/search?q=%2B923421078772+%22Truecaller%22",
+        "GitHub": "https://www.google.com/search?q=%2B923421078772+%22GitHub%22",
+        "Pastebin/Leaks": "https://www.google.com/search?q=%2B923421078772+%22pastebin%22"
+      },
+      "search_engines": {
+        "Google": {
+          "General": "https://www.google.com/search?q=%2B923421078772",
+          "Social Accounts": "https://www.google.com/search?q=%2B923421078772+%28%22WhatsApp%22+OR+%22Telegram%22+OR+%22Facebook%22+OR+%22Instagram%22+OR+%22Twitter%22+OR+%22LinkedIn%22%29",
+          "Leaks/Pastes": "https://www.google.com/search?q=%2B923421078772+%28%22pastebin%22+OR+%22breach%22+OR+%22leak%22%29",
+          "Truecaller": "https://www.google.com/search?q=%2B923421078772+%22Truecaller%22"
+        },
+        "Bing": {
+          "General": "https://www.bing.com/search?q=%2B923421078772",
+          "Social Accounts": "https://www.bing.com/search?q=%2B923421078772+%28%22WhatsApp%22+OR+%22Telegram%22+OR+%22Facebook%22+OR+%22Instagram%22+OR+%22Twitter%22+OR+%22LinkedIn%22%29",
+          "Leaks/Pastes": "https://www.bing.com/search?q=%2B923421078772+%28%22pastebin%22+OR+%22breach%22+OR+%22leak%22%29",
+          "Truecaller": "https://www.bing.com/search?q=%2B923421078772+%22Truecaller%22"
+        },
+        "DuckDuckGo": {
+          "General": "https://duckduckgo.com/?q=%2B923421078772",
+          "Social Accounts": "https://duckduckgo.com/?q=%2B923421078772+%28%22WhatsApp%22+OR+%22Telegram%22+OR+%22Facebook%22+OR+%22Instagram%22+OR+%22Twitter%22+OR+%22LinkedIn%22%29",
+          "Leaks/Pastes": "https://duckduckgo.com/?q=%2B923421078772+%28%22pastebin%22+OR+%22breach%22+OR+%22leak%22%29",
+          "Truecaller": "https://duckduckgo.com/?q=%2B923421078772+%22Truecaller%22"
+        },
+        "Yahoo": {
+          "General": "https://search.yahoo.com/search?p=%2B923421078772",
+          "Social Accounts": "https://search.yahoo.com/search?p=%2B923421078772+%28%22WhatsApp%22+OR+%22Telegram%22+OR+%22Facebook%22+OR+%22Instagram%22+OR+%22Twitter%22+OR+%22LinkedIn%22%29",
+          "Leaks/Pastes": "https://search.yahoo.com/search?p=%2B923421078772+%28%22pastebin%22+OR+%22breach%22+OR+%22leak%22%29",
+          "Truecaller": "https://search.yahoo.com/search?p=%2B923421078772+%22Truecaller%22"
+        },
+        "Yandex": {
+          "General": "https://yandex.com/search/?text=%2B923421078772",
+          "Social Accounts": "https://yandex.com/search/?text=%2B923421078772+%28%22WhatsApp%22+OR+%22Telegram%22+OR+%22Facebook%22+OR+%22Instagram%22+OR+%22Twitter%22+OR+%22LinkedIn%22%29",
+          "Leaks/Pastes": "https://yandex.com/search/?text=%2B923421078772+%28%22pastebin%22+OR+%22breach%22+OR+%22leak%22%29",
+          "Truecaller": "https://yandex.com/search/?text=%2B923421078772+%22Truecaller%22"
+        },
+        "Brave": {
+          "General": "https://search.brave.com/search?q=%2B923421078772",
+          "Social Accounts": "https://search.brave.com/search?q=%2B923421078772+%28%22WhatsApp%22+OR+%22Telegram%22+OR+%22Facebook%22+OR+%22Instagram%22+OR+%22Twitter%22+OR+%22LinkedIn%22%29",
+          "Leaks/Pastes": "https://search.brave.com/search?q=%2B923421078772+%28%22pastebin%22+OR+%22breach%22+OR+%22leak%22%29",
+          "Truecaller": "https://search.brave.com/search?q=%2B923421078772+%22Truecaller%22"
+        }
+      },
+      "direct_links": {
+        "WhatsApp": "https://wa.me/923421078772",
+        "Telegram": "https://t.me/923421078772",
+        "Viber": "viber://chat?number=923421078772"
+      },
+      "carrier_gateways": {
+        "note": "These are unofficial guesses since the real carrier isn't confirmed without a paid API. SMS/email gateways are only reliably known for US carriers; other countries generally do not expose public carrier email gateways."
+      },
+      "email_lookup": {
+        "google_general": "https://www.google.com/search?q=%2B923421078772",
+        "google_email_keyword": "https://www.google.com/search?q=%2B923421078772+email",
+        "google_mailto": "https://www.google.com/search?q=%2B923421078772+mailto",
+        "google_with_at": "https://www.google.com/search?q=%22%2B923421078772%22+%22%40%22",
+        "google_pastebin_email": "https://www.google.com/search?q=%2B923421078772+email+site:pastebin.com",
+        "dehashed_phone_search": "https://dehashed.com/search?query=%2B923421078772",
+        "breach_directory": "https://breachdirectory.org",
+        "note": "No reliable free API maps a phone number to an email. Use paid/authorized breach services (DeHashed, Snusbase, Intelligence X) or Google dorks that pair the number with 'email', 'mailto', or '@'."
+      },
+      "business_dorks": {
+        "Google_Maps": "https://www.google.com/maps/search/%2B923421078772",
+        "Google_My_Business_dork": "https://www.google.com/search?q=%2B923421078772+site:business.google.com",
+        "JustDial": "https://www.justdial.com/%2B923421078772",
+        "Sulekha_dork": "https://www.google.com/search?q=%2B923421078772+site:sulekha.com",
+        "IndiaMart_dork": "https://www.google.com/search?q=%2B923421078772+site:indiamart.com",
+        "Yelp_dork": "https://www.google.com/search?q=%2B923421078772+site:yelp.com",
+        "note": "These are search/directory links only; a match confirms a publicly listed business number, not personal ownership."
+      },
+      "aadhaar": {
+        "lookup_possible": false,
+        "reason": "No free/public API maps a phone number to Aadhaar data. This is restricted by the Aadhaar Act, 2016 and UIDAI regulations.",
+        "authorized_channel": "Only UIDAI-licensed AUA/KUA entities (banks, telecom operators, certain govt agencies) can perform Aadhaar e-KYC, and only with the number holder's explicit consent (OTP-based). Law enforcement must go through official UIDAI/legal channels (e.g. court order or MHA-approved request), not a public API.",
+        "warning": "Any third-party tool/site claiming to reveal Aadhaar details from a phone number is either a scam or operating illegally. Do not use such services."
+      },
+      "paypal": {
+        "lookup_possible": false,
+        "technique": "Manually entering a phone number or email as a 'Send Money' recipient in the PayPal app/website sometimes shows a partially-masked name (e.g. 'J*** D**') if that contact has a PayPal account linked to it.",
+        "why_not_automated": "Automating this requires a real authenticated PayPal session and repeated lookups, which violates PayPal's Terms of Service and risks account suspension/legal action. PhoneOsint does not perform any login or automated requests against PayPal.",
+        "manual_use_only": "If you choose to check this yourself, do it manually, sparingly, and only with proper authorization."
+      },
+      "extra_apis": {
+        "note": "No numlookupapi.com / Abstract API / Veriphone.io key provided; skipping. All three offer a small free-tier monthly quota if you want live carrier data."
+      },
+      "paid_enrichment": {
+        "note": "No paid API keys provided"
+      },
+      "gravatar": {
+        "note": "No email address available to check against Gravatar. Gravatar cannot be queried by phone number directly."
+      },
+      "shodan": {
+        "note": "No Shodan API key provided; skipping remote lookup"
+      },
+      "numverify": {
+        "note": "No Numverify API key provided; skipping remote lookup"
+      },
+      "local_breach_search": {
+        "files_searched": [
+          {
+            "file": "exit",
+            "error": "File not found."
+          }
+        ],
+        "total_matches": 0,
+        "matches": [],
+        "note": "Results are only as good as the file(s) you provided via --breach-file; PhoneOsint performs no verification of this data's accuracy, legality, or provenance. You must have proper authorization to possess and query any dataset used here."
+      },
+      "dark_web": {
+        "Ahmia_Tor_Index": "https://ahmia.fi/search/?q=%2B923421078772",
+        "DarkSearch": "https://darksearch.io/?q=%2B923421078772",
+        "Haystak_Onion": "https://haystak5njsmn2hqkewecpaxdfeht334xm522ktgfjql7eoabjdzjlyd.onion/search?q=%2B923421078772",
+        "Torch_Onion": "http://xmh57jrknzkhv6y3ls3ubitzfqnpswu5jgmdo2nxn4334iyn5i3kpyqd.onion/search?query=%2B923421078772",
+        "note": "Dark web search links only. Pass --tor to route live queries through a local Tor proxy."
+      },
+      "hlr": {
+        "note": "No Twilio Account SID/Auth Token provided; skipping HLR/line-type lookup (this is a paid Twilio feature, no free alternative exists)."
+      },
+      "upi": {
+        "note": "No Cashfree Client ID/Secret provided; skipping UPI name lookup (requires your own KYC-approved Cashfree Payouts merchant account -- no free public API exists for this)."
+      },
+      "ignorant": {
+        "checked_sites": 3,
+        "registered_on": [
+          "instagram.com"
+        ],
+        "rate_limited_sites": [
+          "snapchat.com"
+        ],
+        "results": [
+          {
+            "name": "instagram",
+            "domain": "instagram.com",
+            "method": "other",
+            "frequent_rate_limit": false,
+            "rateLimit": false,
+            "exists": true
+          },
+          {
+            "name": "snapchat",
+            "domain": "snapchat.com",
+            "rateLimit": true,
+            "exists": false
+          },
+          {
+            "name": "amazon",
+            "domain": "amazon.com",
+            "method": "login",
+            "frequent_rate_limit": false,
+            "rateLimit": false,
+            "exists": false
+          }
+        ],
+        "note": "Checks Instagram, Snapchat, and Amazon account existence via the free 'ignorant' library (no login required)."
+      },
+      "telegram": {
+        "note": "Telegram lookup skipped (no session)."
+      },
+      "breach_lookup": {
+        "psbdmp_error": "HTTPSConnectionPool(host='psbdmp.ws', port=443): Max retries exceeded with url: /api/v3/search/923421078772 (Caused by NameResolutionError(\"HTTPSConnection(host='psbdmp.ws', port=443): Failed to resolve 'psbdmp.ws' ([Errno -5] No address associated with hostname)\"))",
+        "dehashed_search": "https://dehashed.com/search?query=%2B923421078772",
+        "google_pastebin_dork": "https://www.google.com/search?q=%2B923421078772+site:pastebin.com",
+        "note": "Public breach APIs for phone numbers are rare. Reliable breach checks require paid/authorized access (DeHashed, Leak-Lookup, etc.)."
+      },
+      "external_tools": {
+        "Sherlock": {
+          "basis": "derived username guess, not a confirmed identity",
+          "runs": [
+            {
+              "command": "/home/kali-broker/phoneosint/venv/bin/sherlock 3421078772 --print-found --timeout 10",
+              "returncode": 0,
+              "stdout": "[*] Checking username 3421078772 on:\n\n[+] AllMyLinks: https://allmylinks.com/3421078772\n[+] BoardGameGeek: https://boardgamegeek.com/user/3421078772\n[+] Chess: https://www.chess.com/member/3421078772\n[+] F3.cool: https://f3.cool/3421078772/\n[+] GaiaOnline: https://www.gaiaonline.com/profiles/3421078772\n[+] Gravatar: http://en.gravatar.com/3421078772\n[+] TikTok: https://www.tiktok.com/@3421078772\n[+] Velomania: https://forum.velomania.ru/member.php?username=3421078772\n[+] forum_guns: https://forum.guns.ru/forummisc/blog/3421078772\n[+] BabyRu: https://www.baby.ru/u/3421078772\n\n[*] Search completed with 10 results\n",
+              "stderr": ""
+            },
+            {
+              "command": "/home/kali-broker/phoneosint/venv/bin/sherlock 923421078772 --print-found --timeout 10",
+              "returncode": 0,
+              "stdout": "[*] Checking username 923421078772 on:\n\n[+] AllMyLinks: https://allmylinks.com/923421078772\n[+] BoardGameGeek: https://boardgamegeek.com/user/923421078772\n[+] Chess: https://www.chess.com/member/923421078772\n[+] F3.cool: https://f3.cool/923421078772/\n[+] GaiaOnline: https://www.gaiaonline.com/profiles/923421078772\n[+] Gravatar: http://en.gravatar.com/923421078772\n[+] TikTok: https://www.tiktok.com/@923421078772\n[+] Velomania: https://forum.velomania.ru/member.php?username=923421078772\n[+] BabyRu: https://www.baby.ru/u/923421078772\n\n[*] Search completed with 9 results\n",
+              "stderr": ""
+            }
+          ]
+        },
+        "PhoneInfoga": {
+          "command": "/usr/local/bin/phoneinfoga scan -n +923421078772",
+          "returncode": 0,
+          "stdout": "Running scan for phone number +923421078772...\n\nResults for googlesearch\nSocial media:\n\tURL: https://www.google.com/search?q=site%3Afacebook.com+intext%3A%22923421078772%22+%7C+intext%3A%22%2B923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Atwitter.com+intext%3A%22923421078772%22+%7C+intext%3A%22%2B923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Alinkedin.com+intext%3A%22923421078772%22+%7C+intext%3A%22%2B923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Ainstagram.com+intext%3A%22923421078772%22+%7C+intext%3A%22%2B923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Avk.com+intext%3A%22923421078772%22+%7C+intext%3A%22%2B923421078772%22+%7C+intext%3A%2203421078772%22\nDisposable providers:\n\tURL: https://www.google.com/search?q=site%3Ahs3x.com+intext%3A%22923421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Areceive-sms-now.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Asmslisten.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Asmsnumbersonline.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Afreesmscode.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Acatchsms.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Asmstibo.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Asmsreceiving.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Agetfreesmsnumber.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Asellaite.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Areceive-sms-online.info+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Areceivesmsonline.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Areceive-a-sms.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Asms-receive.net+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Areceivefreesms.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Areceive-sms.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Areceivetxt.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Afreephonenum.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Afreesmsverification.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Areceive-sms-online.com+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Asmslive.co+intext%3A%22923421078772%22+%7C+intext%3A%2203421078772%22\nReputation:\n\tURL: https://www.google.com/search?q=site%3Awhosenumber.info+intext%3A%22%2B923421078772%22+intitle%3A%22who+called%22\n\n\tURL: https://www.google.com/search?q=intitle%3A%22Phone+Fraud%22+intext%3A%22923421078772%22+%7C+intext%3A%22%2B923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Afindwhocallsme.com+intext%3A%22%2B923421078772%22+%7C+intext%3A%22923421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Ayellowpages.ca+intext%3A%22%2B923421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Aphonenumbers.ie+intext%3A%22%2B923421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Awho-calledme.com+intext%3A%22%2B923421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Ausphonesearch.net+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Awhocalled.us+inurl%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Aquinumero.info+intext%3A%2203421078772%22+%7C+intext%3A%22923421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Auk.popularphotolook.com+inurl%3A%2203421078772%22\nIndividuals:\n\tURL: https://www.google.com/search?q=site%3Anuminfo.net+intext%3A%22923421078772%22+%7C+intext%3A%22%2B923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Async.me+intext%3A%22923421078772%22+%7C+intext%3A%22%2B923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Awhocallsyou.de+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Apastebin.com+intext%3A%22923421078772%22+%7C+intext%3A%22%2B923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Awhycall.me+intext%3A%22923421078772%22+%7C+intext%3A%22%2B923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Alocatefamily.com+intext%3A%22923421078772%22+%7C+intext%3A%22%2B923421078772%22+%7C+intext%3A%2203421078772%22\n\n\tURL: https://www.google.com/search?q=site%3Aspytox.com+intext%3A%2203421078772%22\nGeneral:\n\tURL: https://www.google.com/search?q=intext%3A%22923421078772%22+%7C+intext%3A%22%2B923421078772%22+%7C+intext%3A%2203421078772%22+%7C+intext%3A%220342+1078772%22\n\n\tURL: https://www.google.com/search?q=%28ext%3Adoc+%7C+ext%3Adocx+%7C+ext%3Aodt+%7C+ext%3Apdf+%7C+ext%3Artf+%7C+ext%3Asxw+%7C+ext%3Apsw+%7C+ext%3Appt+%7C+ext%3Apptx+%7C+ext%3Apps+%7C+ext%3Acsv+%7C+ext%3Atxt+%7C+ext%3Axls%29+intext%3A%22923421078772%22+%7C+intext%3A%22%2B923421078772%22+%7C+intext%3A%2203421078772%22\n\nResults for local\nRaw local: 03421078772\nLocal: 0342 1078772\nE164: +923421078772\nInternational: 923421078772\nCountry: PK\n\n2 scanner(s) succeeded\n",
+          "stderr": ""
+        },
+        "SpiderFoot": {
+          "command": "/home/kali-broker/phoneosint/venv/bin/python3 /home/kali-broker/.phoneosint-tools/SpiderFoot/sf.py -s +923421078772 -t PHONE_NUMBER -m sfp_phonenumber -o json",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"/home/kali-broker/.phoneosint-tools/SpiderFoot/sf.py\", line 25, in <module>\n    import cherrypy\nModuleNotFoundError: No module named 'cherrypy'\n"
+        },
+        "Maigret": {
+          "command": "/home/kali-broker/phoneosint/venv/bin/maigret 923421078772 --phone --no-color",
+          "returncode": 2,
+          "stdout": "",
+          "stderr": "usage: maigret [-h] [--version] [--timeout TIMEOUT] [--retries RETRIES]\n               [-n CONNECTIONS] [--dns-resolver {async,threaded}]\n               [--no-recursion] [--no-extracting]\n               [--id-type {username,yandex_public_id,gaia_id,vk_id,ok_id,wikimapia_uid,steam_id,uidme_uguid,yelp_userid,orcid}]\n               [--permute] [--db DB_FILE] [--no-autoupdate] [--force-update]\n               [--cookies-jar-file COOKIE_FILE] [--ignore-ids IGNORED_IDS]\n               [--folderoutput PATH] [--proxy PROXY_URL]\n               [--tor-proxy TOR_PROXY_URL] [--i2p-proxy I2P_PROXY_URL]\n               [--with-domains] [--cloudflare-bypass] [-a] [--top-sites N]\n               [--tags TAGS] [--exclude-tags EXCLUDE_TAGS]\n               [--keywords KEYWORD [KEYWORD ...]] [--site SITE_NAME]\n               [--use-disabled-sites] [--parse URL] [--submit URL]\n               [--self-check] [--auto-disable] [--diagnose] [--stats]\n               [--web [PORT]] [--print-not-found] [--print-errors] [--verbose]\n               [--info] [--debug] [--no-color] [--no-progressbar] [-T] [-C]\n               [-H] [-X] [-P] [-M] [-G] [--neo4j] [-J TYPE] [--ai]\n               [--ai-model AI_MODEL] [--reports-sorting {default,data}]\n               [USERNAMES ...]\nmaigret: error: unrecognized arguments: --phone\n"
+        },
+        "Holehe": {
+          "note": "Holehe expects an email address; phone-derived usernames are unlikely to match.",
+          "skipped": true
+        },
+        "theHarvester": {
+          "note": "Skipped auto-run: theHarvester needs a domain, not a phone number."
+        }
+      },
+      "truecaller": {
+        "error": "Login request failed: (1) The string supplied did not seem to be a phone number."
+      },
+      "exposure_score": {
+        "score": 15,
+        "level": "Low",
+        "reasons": [
+          "Account found on: instagram.com (+15)"
+        ],
+        "note": "Derived heuristically from the other sections in this report; not an official risk rating."
+      }
+    }
+  },
+  {
+    "scanned_at": "2026-07-29T18:16:59+00:00",
+    "report": {
+      "target": "+923421078772",
+      "basic_info": {
+        "e164": "+923421078772",
+        "national": "0342 1078772",
+        "international": "+92 342 1078772",
+        "country_code": 92,
+        "national_number": 3421078772,
+        "region": "Pakistan",
+        "timezone": [
+          "Asia/Karachi"
+        ],
+        "carrier": "Telenor",
+        "line_type": "MOBILE",
+        "possible": true,
+        "valid": true
+      },
+      "external_osint_tools": {
+        "Maigret": {
+          "description": "Username/email/phone account discovery across social networks",
+          "command": "maigret 923421078772 --phone",
+          "note": "Requires maigret installed; primarily username-based."
+        },
+        "Sherlock": {
+          "description": "Username-based social account discovery",
+          "command": "sherlock 923421078772",
+          "note": "Use a username derived from the number, not the number itself."
+        },
+        "Holehe": {
+          "description": "Check if email/phone is registered on services",
+          "command": "holehe 923421078772",
+          "note": "Requires email format; phone support is limited."
+        },
+        "Twint": {
+          "description": "Twitter intelligence (search mentions of number)",
+          "command": "twint -s '+923421078772' -o twint_923421078772.csv --csv",
+          "note": "Deprecated/fragile; searches tweets containing the number."
+        },
+        "GHunt": {
+          "description": "Google account OSINT",
+          "command": "ghunt email 923421078772@gmail.com",
+          "note": "Requires an email, not a phone number."
+        },
+        "Mr.Holmes": {
+          "description": "All-in-one OSINT with phone modules",
+          "command": "python3 MrHolmes.py",
+          "note": "Mr.Holmes is a fully interactive menu-driven tool (no CLI flags) -- run it, then choose 'Phone Number OSINT' from the menu and paste the number in when prompted. Cannot be auto-scripted safely."
+        },
+        "PhoneInfoga": {
+          "description": "Advanced phone number OSINT scanner",
+          "command": "phoneinfoga scan -n +923421078772",
+          "note": "Install phoneinfoga separately."
+        },
+        "SpiderFoot": {
+          "description": "Full OSINT automation with phone number modules",
+          "command": "python3 sf.py -s +923421078772 -t PHONE_NUMBER -m sfp_phonenumber -o json",
+          "note": "Auto-run by PhoneOsint if cloned to ~/.phoneosint-tools/SpiderFoot (see install.sh); no persistent server or API key needed for this single-module scan."
+        },
+        "theHarvester": {
+          "description": "Email/domain enumeration",
+          "command": "theHarvester -d example.com -b all",
+          "note": "Not phone-specific; use with a domain linked to the target."
+        }
+      },
+      "disclaimer": "This tool only gathers publicly accessible metadata. Names, exact addresses, and private accounts require paid/authorized data or breach sources. City/region accuracy depends on carrier and public data availability.",
+      "exposure_score": {
+        "score": 0,
+        "level": "Low",
+        "reasons": [
+          "No strong exposure signals found in the enabled sections."
+        ],
+        "note": "Derived heuristically from the other sections in this report; not an official risk rating."
+      }
+    }
+  },
+  {
+    "scanned_at": "2026-07-29T18:35:13+00:00",
+    "report": {
+      "target": "03421078772",
+      "basic_info": {
+        "e164": "+923421078772",
+        "national": "0342 1078772",
+        "international": "+92 342 1078772",
+        "country_code": 92,
+        "national_number": 3421078772,
+        "region": "Pakistan",
+        "timezone": [
+          "Asia/Karachi"
+        ],
+        "carrier": "Telenor",
+        "line_type": "MOBILE",
+        "possible": true,
+        "valid": true
+      },
+      "external_osint_tools": {
+        "Maigret": {
+          "description": "Username/email/phone account discovery across social networks",
+          "command": "maigret 923421078772 --phone",
+          "note": "Requires maigret installed; primarily username-based."
+        },
+        "Sherlock": {
+          "description": "Username-based social account discovery",
+          "command": "sherlock 923421078772",
+          "note": "Use a username derived from the number, not the number itself."
+        },
+        "Holehe": {
+          "description": "Check if email/phone is registered on services",
+          "command": "holehe 923421078772",
+          "note": "Requires email format; phone support is limited."
+        },
+        "Twint": {
+          "description": "Twitter intelligence (search mentions of number)",
+          "command": "twint -s '+923421078772' -o twint_923421078772.csv --csv",
+          "note": "Deprecated/fragile; searches tweets containing the number."
+        },
+        "GHunt": {
+          "description": "Google account OSINT",
+          "command": "ghunt email 923421078772@gmail.com",
+          "note": "Requires an email, not a phone number."
+        },
+        "Mr.Holmes": {
+          "description": "All-in-one OSINT with phone modules",
+          "command": "python3 MrHolmes.py",
+          "note": "Mr.Holmes is a fully interactive menu-driven tool (no CLI flags) -- run it, then choose 'Phone Number OSINT' from the menu and paste the number in when prompted. Cannot be auto-scripted safely."
+        },
+        "PhoneInfoga": {
+          "description": "Advanced phone number OSINT scanner",
+          "command": "phoneinfoga scan -n +923421078772",
+          "note": "Install phoneinfoga separately."
+        },
+        "SpiderFoot": {
+          "description": "Full OSINT automation with phone number modules",
+          "command": "python3 sf.py -s +923421078772 -t PHONE_NUMBER -m sfp_phonenumber -o json",
+          "note": "Auto-run by PhoneOsint if cloned to ~/.phoneosint-tools/SpiderFoot (see install.sh); no persistent server or API key needed for this single-module scan."
+        },
+        "theHarvester": {
+          "description": "Email/domain enumeration",
+          "command": "theHarvester -d example.com -b all",
+          "note": "Not phone-specific; use with a domain linked to the target."
+        }
+      },
+      "disclaimer": "This tool only gathers publicly accessible metadata. Names, exact addresses, and private accounts require paid/authorized data or breach sources. City/region accuracy depends on carrier and public data availability.",
+      "exposure_score": {
+        "score": 0,
+        "level": "Low",
+        "reasons": [
+          "No strong exposure signals found in the enabled sections."
+        ],
+        "note": "Derived heuristically from the other sections in this report; not an official risk rating."
+      }
+    }
+  }
+]
